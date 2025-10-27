@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prithwiraj Nath | Game Design & Art Portfolio</title>
+    <!-- Load Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configure Tailwind for Inter font and custom colors --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        'primary': '#4f46e5', // Indigo for accent
+                        'secondary': '#1f2937', // Dark gray for card backgrounds
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Define Inter font from Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+        
+        /* Smooth scroll for navigation */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Custom scrollbar style for aesthetics (optional, but nice for dark themes) */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background-color: #4f46e5;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 text-gray-100 font-sans antialiased">
+
+    <!-- Header & Navigation --><header class="sticky top-0 z-50 bg-gray-900/90 backdrop-blur-sm shadow-lg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+            <a href="#hero" class="text-2xl font-bold text-primary hover:text-indigo-400 transition">PRITHWIRAJ NATH</a>
+            
+            <!-- Desktop Nav --><nav class="hidden md:flex space-x-8">
+                <a href="#game-design" class="text-lg font-medium hover:text-primary transition duration-300">Game Design</a>
+                <a href="#pixel-art" class="text-lg font-medium hover:text-primary transition duration-300">Pixel Art</a>
+                <a href="#3d-modelling" class="text-lg font-medium hover:text-primary transition duration-300">3D Modelling</a>
+                <a href="#contact" class="text-lg font-medium hover:text-primary transition duration-300">Contact</a>
+            </nav>
+            
+            <!-- Mobile Menu Placeholder (Not implemented as JS in single file, but structure is ready) --><button class="md:hidden text-gray-100 hover:text-primary focus:outline-none">
+                <!-- Icon: Menu --><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-menu"><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section --><section id="hero" class="py-24 md:py-36 text-center max-w-7xl mx-auto px-4">
+            <div class="space-y-6">
+                <!-- Profile Image Placeholder --><div class="mx-auto w-32 h-32 rounded-full overflow-hidden border-4 border-primary shadow-xl">
+                    <img src="https://placehold.co/128x128/1e293b/94a3b8?text=PN" alt="Profile Picture" class="w-full h-full object-cover" 
+                         onerror="this.onerror=null; this.src='https://placehold.co/128x128/1e293b/94a3b8?text=PN';">
+                </div>
+
+                <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight">
+                    Hi, I'm <span class="text-primary">Prithwiraj Nath</span>
+                </h1>
+                
+                <p class="text-2xl md:text-3xl text-gray-300 font-light max-w-4xl mx-auto">
+                    I'm a game designer and artist focused on designing immersive experiences and bringing worlds to life through 3D modeling, pixel art, and animation.
+                </p>
+
+                <!-- CTA Button --><div class="pt-8">
+                    <a href="#game-design" class="inline-flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-full shadow-lg text-white bg-primary hover:bg-indigo-600 transition duration-300 transform hover:scale-105">
+                        View Projects
+                    </a>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Divider --><hr class="max-w-5xl mx-auto border-t border-gray-700/50">
+
+        <!-- 2. Game Design Section --><section id="game-design" class="py-16 md:py-24 max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">Game Design</h2>
+            <p class="text-xl text-center text-gray-400 mb-16 max-w-3xl mx-auto">
+                I love exploring **systems design**, **prototyping**, and working to create balanced, engaging player loops. Here are some of my design projects.
+            </p>
+
+            <!-- Project Grid --><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project: Penance --><div class="bg-secondary p-6 rounded-xl shadow-2xl hover:shadow-primary/30 transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-primary mb-2">Penance</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Role: Game Designer | Genre: Hand-drawn FPS, Roguelite</p>
+                    <p class="text-gray-300">A hand-drawn first-person shooter where players strategically sacrifice parts of their own body to acquire powerful, new abilities, influencing both combat and exploration.</p>
+                    <a href="#" class="mt-4 inline-block text-sm font-medium text-indigo-400 hover:text-indigo-300">View Design Brief &rarr;</a>
+                </div>
+                
+                <!-- Project: Light and Wonder --><div class="bg-secondary p-6 rounded-xl shadow-2xl hover:shadow-primary/30 transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-primary mb-2">Dream Descent</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Role: Game/Narrative Designer | Genre: Survival Puzzle Platformer</p>
+                    <p class="text-gray-300">A narrative platformer about a girl dragged into the world of her nightmares under her bed. She must navigate by strategically using a magical light cube, which keeps her safe from the monsters lurking in the shadows.</p>
+                    <a href="#" class="mt-4 inline-block text-sm font-medium text-indigo-400 hover:text-indigo-300">View Level Maps &rarr;</a>
+                </div>
+                
+                <!-- Project: Bubbleoidvania --><div class="bg-secondary p-6 rounded-xl shadow-2xl hover:shadow-primary/30 transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-primary mb-2">Bubbleoidvania</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Engine: Unity | Genre: Metroidvania/Platformer</p>
+                    <p class="text-gray-300">A student project combining the non-linear exploration and ability-gating of Metroidvanias with unique bubble traversal and physics-based puzzle mechanics.</p>
+                    <a href="https://play.unity.com/en/games/ff55b6c0-5ecb-4660-828c-7fc7eee4d6ec/bubbleoidvania" class="mt-4 inline-block text-sm font-medium text-indigo-400 hover:text-indigo-300">Play on Unity Play &rarr;</a>
+                </div>
+                
+                <!-- Project: License to Kill - UPDATED DESCRIPTION AND ROLE/GENRE --><div class="bg-secondary p-6 rounded-xl shadow-2xl hover:shadow-primary/30 transition duration-300 transform hover:-translate-y-1">
+                    <h3 class="text-2xl font-semibold text-primary mb-2">License to Kill</h3>
+                    <p class="text-gray-400 mb-4 text-sm">Role: Game/Combat Designer | Genre: Top-Down Hack & Slash</p>
+                    <p class="text-gray-300">An aspiring assassin rises up the ranks in this brutal, top-down hack and slash game, set in a visceral world inspired by noir, exploitation, and grindhouse films.</p>
+                    <a href="#" class="mt-4 inline-block text-sm font-medium text-indigo-400 hover:text-indigo-300">View GDD Section &rarr;</a>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- 3. Pixel Art Section --><section id="pixel-art" class="py-16 md:py-24 bg-gray-800 max-w-full px-4">
+            <div class="max-w-7xl mx-auto">
+                <h2 class="text-4xl font-bold text-center mb-12 text-primary">Pixel Art</h2>
+                <p class="text-xl text-center text-gray-400 mb-16 max-w-3xl mx-auto">
+                    Character animations for **License to Kill**. Creating smooth, brutal combat animations and enemy sprites for a top-down, high-action pixel game.
+                </p>
+
+                <!-- Art Gallery Grid --><div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-4">
+                    <!-- Art Piece 1: Player Run Cycle --><div class="relative group aspect-square bg-secondary rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/500x500/0a0a0a/4f46e5?text=Player+Run+Animation" alt="Pixel Art Character Run Cycle" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75"
+                             onerror="this.onerror=null; this.src='https://placehold.co/500x500/0a0a0a/4f46e5?text=Player+Run+Animation';">
+                        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <p class="text-white text-center p-4 font-semibold">Player Animation: Run Cycle (32x32)</p>
+                        </div>
+                    </div>
+                    <!-- Art Piece 2: Player Attack --><div class="relative group aspect-square bg-secondary rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/500x500/0a0a0a/4f46e5?text=Katana+Attack+Animation" alt="Pixel Art Dual Katana Attack Animation" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75"
+                             onerror="this.onerror=null; this.src='https://placehold.co/500x500/0a0a0a/4f46e5?text=Katana+Attack+Animation';">
+                        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <p class="text-white text-center p-4 font-semibold">Player Animation: Dual Katana Attack</p>
+                        </div>
+                    </div>
+                    <!-- Art Piece 3: Enemy Sprite --><div class="relative group aspect-square bg-secondary rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/500x500/0a0a0a/4f46e5?text=Enemy+Thug+Sprite" alt="Pixel Art Enemy Thug Sprite" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75"
+                             onerror="this.onerror=null; this.src='https://placehold.co/500x500/0a0a0a/4f46e5?text=Enemy+Thug+Sprite';">
+                        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <p class="text-white text-center p-4 font-semibold">Enemy Sprite: Thug Idle & Damage</p>
+                        </div>
+                    </div>
+                    <!-- Art Piece 4: VFX --><div class="relative group aspect-square bg-secondary rounded-lg overflow-hidden shadow-xl">
+                        <img src="https://placehold.co/500x500/0a0a0a/4f46e5?text=Blood+VFX+Pixel" alt="Pixel Art Blood Splatter VFX" class="w-full h-full object-cover transition duration-500 group-hover:opacity-75"
+                             onerror="this.onerror=null; this.src='https://placehold.co/500x500/0a0a0a/4f46e5?text=Blood+VFX+Pixel';">
+                        <div class="absolute inset-0 bg-black bg-opacity-60 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-500">
+                            <p class="text-white text-center p-4 font-semibold">Environmental: Blood Splatter VFX (8 Frames)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. 3D Modelling Section --><section id="3d-modelling" class="py-16 md:py-24 max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold text-center mb-12 text-primary">3D Modelling</h2>
+            <p class="text-xl text-center text-gray-400 mb-16 max-w-3xl mx-auto">
+                I'm experienced in low-poly and stylized asset creation using Blender, focusing on optimization for game engines and clean topology.
+            </p>
+
+            <!-- Project Grid - Superman and Harley Quinn --><div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- 3D Project Card 1: Superman --><div class="bg-secondary rounded-xl shadow-2xl overflow-hidden hover:shadow-primary/30 transition duration-300">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Superman+Model" alt="3D Superman Model" class="w-full h-64 object-cover"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/94a3b8?text=Superman+Model';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-primary mb-2">Superman Character Model</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Software: Blender, ZBrush | Focus: Stylized Character</p>
+                        <p class="text-3d-modelling text-gray-300">A high-detail stylized character model of Superman, optimized for game engine integration with clean topology and PBR textures.</p>
+                        <a href="https://www.artstation.com/prithwirajnath" class="mt-4 inline-block text-sm font-medium text-indigo-400 hover:text-indigo-300" target="_blank">View on ArtStation &rarr;</a>
+                    </div>
+                </div>
+                <!-- 3D Project Card 2: Harley Quinn --><div class="bg-secondary rounded-xl shadow-2xl overflow-hidden hover:shadow-primary/30 transition duration-300">
+                    <img src="https://placehold.co/600x400/0f172a/94a3b8?text=Harley+Quinn+Model" alt="3D Harley Quinn Model" class="w-full h-64 object-cover"
+                         onerror="this.onerror=null; this.src='https://placehold.co/600x400/0f172a/94a3b8?text=Harley+Quinn+Model';">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-primary mb-2">Harley Quinn Character Model</h3>
+                        <p class="text-gray-400 mb-4 text-sm">Software: Blender, Substance Painter | Focus: Stylized Character</p>
+                        <p class="text-gray-300">A vibrant, stylized character model of Harley Quinn, showcasing dynamic posing, detailed props, and expressive texturing.</p>
+                        <a href="https://www.artstation.com/prithwirajnath" class="mt-4 inline-block text-sm font-medium text-indigo-400 hover:text-indigo-300" target="_blank">View on ArtStation &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Contact Section --><section id="contact" class="py-16 md:py-24 max-w-7xl mx-auto px-4 text-center">
+            <div class="bg-secondary p-10 md:p-16 rounded-3xl shadow-2xl max-w-2xl mx-auto border border-gray-700">
+                <h2 class="text-4xl font-bold mb-4 text-primary">Get in Touch</h2>
+                <p class="text-xl text-gray-300 mb-8">
+                    Have a project idea, or just want to talk about game development? I’m currently open to freelance opportunities and full-time roles.
+                </p>
+                
+                <!-- Contact Details --><div class="space-y-4">
+                    <p class="text-lg flex items-center justify-center text-gray-300">
+                        <!-- Icon: Mail --><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail mr-3 text-primary"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                        <a href="mailto:prithwirajnath4769@gmail.com" class="hover:text-primary transition">prithwirajnath4769@gmail.com</a>
+                    </p>
+                    <p class="text-lg flex items-center justify-center text-gray-300">
+                        <!-- Icon: Link/Portfolio --><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-square-arrow-out-up-right mr-3 text-primary"><path d="M21 13V6a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h8"/><path d="M21 3 10 14"/><path d="M15 3h6v6"/></svg>
+                        <a href="https://www.linkedin.com/in/prithwiraj-nath-724b11317" class="hover:text-primary transition">linkedin.com/in/prithwiraj-nath-724b11317</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer --><footer class="bg-gray-900 border-t border-gray-800 mt-12">
+        <div class="max-w-7xl mx-auto px-4 py-6 text-center text-sm text-gray-500">
+            &copy; 2024 Prithwiraj Nath. All rights reserved. Built with Tailwind CSS.
+        </div>
+    </footer>
+
+</body>
+</html>
